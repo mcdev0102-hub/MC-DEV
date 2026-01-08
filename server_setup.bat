@@ -8,7 +8,7 @@ color 0A
 mode con: cols=90 lines=45
 
 ::  ----------------  SABİTLER  ----------------
-set "VERSION=8.5"
+set "VERSION=1.0"
 set "DESKTOP=%USERPROFILE%\Desktop"
 set "LOG=%DESKTOP%\Paper_Installer_%DATE:~-4,4%%DATE:~-10,2%%DATE:~-7,2%.log"
 set "TEMP_DIR=%TEMP%\PaperInstaller_%RANDOM%"
@@ -510,4 +510,5 @@ for /f "tokens=*" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Sess
 
 if defined USER_PATH set "PATH=%USER_PATH%;%SYSTEM_PATH%"
 if not defined USER_PATH set "PATH=%SYSTEM_PATH%"
+
 exit /b
